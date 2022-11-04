@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" type="image/svg+xml" href="favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arma tu pedido | Frambuesa Cake Shop</title>
+    <meta name="description" content="Pasteleria deliciosa" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <style>
+      @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+      * {
+        box-sizing: border-box;
+        font-family: "Kodchasan", sans-serif;
+        font-weight: 400;
+      }
+      body,
+      html {
+        margin: 0px; 
+        width: 100%; 
+				min-height: 100vh;
+        font-weight: bolder;
+      } 
+      body {
+        min-width: 900px; 
+				height: 100%;
+				display: flex;
+				flex-direction: column;
+        background: rgb(255, 255, 255);
+        background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 1) 0%,
+          rgba(63, 85, 158, 0.5) 100%
+        );
+      }
+      header {
+        background-color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 60px;
+        padding: 0px 15px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 1px 4px 0px;
+        position: sticky;
+        top: 0px;
+        z-index: 20;
+      }
+      header img {
+        width: auto;
+        height: 40px;
+      }
+      .navigation-container {
+        display: flex;
+      }
+      .navigation {
+        display: flex;
+        list-style-type: none;
+        gap: 10px;
+        align-items: center;
+      }
+      .navigation .link-active a {
+        font-weight: 700;
+        border-bottom: 2px solid #c71c81;
+      }
+      a:link,
+      a:visited,
+      a:active {
+        color: #c71c81;
+        text-decoration: none;
+        font-size: 18px;
+      }
+      footer {
+        background-color: #3f559e;
+        padding: 20px;
+        display: flex;
+        gap: 40px;
+        align-items: flex-start;
+        width: 100%;
+        color: white;
+        justify-content: center;
+      }
+      footer ul {
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+      }
+      footer ul li {
+        margin-bottom: 10px;
+      }
+      footer ul li strong {
+        font-weight: 600;
+      }
+      footer p {
+        margin: 0px 0px 1em 0px;
+        font-weight: 600;
+      }
+      footer .redes div {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+      }
+      section {
+				display: flex;
+				flex: 1;
+				justify-content: center;
+				align-items: center;
+				padding: 20px 0px;
+      }
+      .card-container {
+				background-color: #fff;
+				box-shadow: rgba(0, 0, 0, 0.35) 0px 1px 4px 0px;
+				border-radius: 10px;
+				padding: 20px;
+				max-width: 720px;
+      }
+			.card-container h1{
+				margin-top: 0px;
+				text-align: center;
+				font-weight: 700;
+			}
+			.card-container h3{
+				margin-top: 0px;
+				text-align: center;
+				font-weight: 600;
+				color: #c71c81;
+			}
+			.card-container form .con-fondo{
+				margin-bottom: 20px;
+			}
+			form .info input, form .info textarea{
+				border-radius: 5px;
+				height: 30px;
+				border: #3f559e solid 2px;
+				margin-bottom: 15px;
+			}
+			textarea{
+				min-height: 100px;
+				margin-bottom: 0px;
+			}
+			form label{
+				margin-bottom: 5px;
+				font-weight: 600; 
+				margin-bottom: 10px;
+			}
+			form button{
+				border-radius: 5px;
+				background-color: #3f559e;
+				font-weight: 500;
+				color: white;
+				border: none;
+				padding: 10px 20px ;
+				text-align: center;
+				cursor: pointer;
+				transition: all 0.32s;
+			}
+			button:hover{
+				background-color: #6F80B6;
+			}
+			form{
+				display: flex;
+				flex-direction: column; 
+			}
+			.info{
+				display: flex;
+				flex-direction: column;
+			}
+			.row{
+				display: flex;
+				gap: 50px;
+			}
+			.listado{
+				display: flex;
+				flex-direction: column;
+			}
+			
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <img id="logo" src="./logo-cupcake.png" alt="Logo" title="Logo" />
+      <nav class="navigation-container">
+        <ul class="navigation">
+          <li><a href="./index.html">Home</a></li>
+          <li class="link-active"><a href="./createCake.html">Arma tu pedido</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="first-section">
+      
+        <div class="card-container" >
+					<h1>Arma tu pastel 🎂</h1>
+					<form>
+						<div class="info con-fondo" >
+							<h3>Primero un poco de ti y tu pastel</h3>
+							<label for="nombre">Nombre:</label>
+							<input type="text" id="nombre" name="nombre">
+							<label for="telefono">Teléfono:</label>
+							<input type="phone" id="telefono" name="telefono">
+							<label for="email">Correo Electrónico:</label>
+							<input type="email" id="email" name="email">
+							<label for="descripcionPastel">Descripción de tu pastel:</label>
+							<textarea id="descripcionPastel" name="descripcionPastel" ></textarea>
+						</div>
+						
+					<div class="row con-fondo" >
+						<div class="sabores" >
+							<h3>Selecciona tus sabores favoritos</h3>
+							<div class="listado" >
+								<label><input type="checkbox" name="sabores" value="Vainilla $10.00"> Vainilla $10.00</label>
+								<label><input type="checkbox" name="sabores" value="Chocolate $15.00"> Chocolate $15.00</label>
+								<label><input type="checkbox" name="sabores" value="Zanahoria $5.00"> Zanahoria $5.00</label>
+								<label><input type="checkbox" name="sabores" value="Red velvet $20.00"> Red velvet $20.00</label>
+								<label><input type="checkbox" name="sabores" value="Tres leches $15.00"> Tres leches $15.00</label>
+							</div>
+						</div>
+						<div class="adornos" >
+							<h3>Selecciona tus adornos </h3>
+							<div class="listado" >
+								<label><input type="checkbox" name="adornos" value="Chocolates $10.00"> Chocolates $10.00</label>
+								<label><input type="checkbox" name="adornos" value="Frutos rojos $20.00"> Frutos rojos $20.00</label>
+								<label><input type="checkbox" name="adornos" value="Crema batida $5.00"> Crema batida $5.00</label>
+								<label><input type="checkbox" name="adornos" value="Fondant $10.00"> Fondant $10.00</label>
+								<label><input type="checkbox" name="adornos" value="Galletas varias $10.00"> Galletas varias $10.00</label>
+								<label><input type="checkbox" name="adornos" value="Galletas oreos $15.00"> Galletas oreos $15.00</label>
+								<label><input type="checkbox" name="adornos" value="Figuritas plasticas $30.00"> Figuritas plasticas $30.00</label>
+							</div>
+						</div>
+					</div>
+					<button>
+						Enviar pedido
+					</button>
+					</form>
+				</div>
+      
+    </section>
+    <footer>
+      <div class="redes">
+        <p>Redes sociales</p>
+        <div>
+          <i class="bi-instagram"></i>
+          <i class="bi-facebook"></i>
+          <i class="bi-pinterest"></i>
+        </div>
+      </div>
+      <div class="datos">
+        <p>Datos</p>
+        <ul>
+          <li><i class="bi-telephone"></i> (+1) 650 543 4800</li>
+          <li>
+            <i class="bi-geo-alt"></i> 1111-8 Sōjamachi Sōja, Maebashi, Gunma
+            371-0852, Japón
+          </li>
+        </ul>
+      </div>
+      <div class="horarios">
+        <p>Horarios</p>
+        <ul>
+          <li>
+            <i class="bi-clock"></i> Lunes a viernes:
+            <strong>9:00 - 18:00</strong>
+          </li>
+          <li>
+            <i class="bi-clock"></i> Sabados: <strong>9:00 - 12:00</strong>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

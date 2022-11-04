@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" type="image/svg+xml" href="favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin | Frambuesa Cake Shop</title>
+    <meta name="description" content="Pasteleria deliciosa" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <style>
+      @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+      * {
+        box-sizing: border-box;
+        font-family: "Kodchasan", sans-serif;
+        font-weight: 400;
+      }
+      body,
+      html {
+        margin: 0px;
+        background-color: white;
+        width: 100%;
+				min-height: 100vh;
+        font-weight: bolder;
+      } 
+      body {
+        min-width: 900px; 
+				height: 100%;
+				display: flex;
+				flex-direction: column;
+        background: rgb(255, 255, 255);
+        background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 1) 0%,
+          rgba(63, 85, 158, 0.5) 100%
+        );
+        min-width: 900px;
+      }
+      header {
+        background-color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 60px;
+        padding: 0px 15px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 1px 4px 0px;
+        position: sticky;
+        top: 0px;
+        z-index: 20;
+      }
+      header img {
+        width: auto;
+        height: 40px;
+      }
+      .navigation-container {
+        display: flex;
+      }
+      .navigation {
+        display: flex;
+        list-style-type: none;
+        gap: 10px;
+        align-items: center;
+      }
+      .navigation .link-active a {
+        font-weight: 700;
+        border-bottom: 2px solid #c71c81;
+      }
+      a:link,
+      a:visited,
+      a:active {
+        color: #c71c81;
+        text-decoration: none;
+        font-size: 18px;
+      }
+      footer {
+				margin-top: auto;
+        background-color: #3f559e;
+        padding: 30px;  
+        width: 100%;
+      } 
+      section{
+				padding: 20px 50px;
+      }
+			section h1{
+				font-weight: 700;
+				font-size: 2em;
+				margin-top: 0px;
+				margin-bottom: 10px;
+				color: #c71c81;
+				border-bottom:#c71c81 2px solid;
+			}
+			section h2{
+				font-weight: 600;
+				margin-top: 0px;
+				margin-bottom: 10px;
+				color: #3f559e;
+			}
+			.row{
+				display: flex;
+				gap: 30px;
+			}
+			table {
+				font-family: arial, sans-serif;
+				border-collapse: collapse;
+				width: 100%;
+				border-radius: 10px;
+			}
+			th{
+				font-weight: 600;
+			}
+			td, th {
+				border: 1px solid #141414;
+				text-align: left;
+				padding: 8px;
+			}
+
+			tr:nth-child(even) {
+				background-color: rgba(244, 246, 246,0.7);
+			}
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <img id="logo" src="./logo-cupcake.png" alt="Logo" title="Logo" />
+      <nav class="navigation-container">
+        <ul class="navigation">
+          <li class="link-active"><a href="./index.html">Ir a principal</a></li>
+        </ul>
+      </nav>
+    </header>
+     
+    <section> 
+      <article class="inventario-container">
+        <h1>Inventario.</h1>
+        <div class="row" >
+					<div>
+						<h2>Sabores.</h2>
+						<div>
+							<table>
+								<tr>
+									<th>Nombre</th>
+									<th>Cantidad</th>
+								</tr>
+								<tr>
+									<td>Vainilla</td>
+									<td>10</td>
+								</tr>
+								<tr>
+									<td>Chocolate</td>
+									<td>5</td>
+								</tr>
+								<tr>
+									<td>Zanahoria</td>
+									<td>6</td>
+								</tr>
+								<tr>
+									<td>Red velvet</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td>Tres leches</td>
+									<td>20</td>
+								</tr> 
+							</table> 
+						</div>
+					</div>
+					<div>
+						<h2>Adornos.</h2>
+						<table>
+							<tr>
+								<th>Nombre</th>
+								<th>Cantidad</th>
+							</tr>
+							<tr>
+								<td>Chocolates</td>
+								<td>50</td>
+							</tr>
+							<tr>
+								<td>Frutos rojos</td>
+								<td>23</td>
+							</tr>
+							<tr>
+								<td>Crema batida</td>
+								<td>8</td>
+							</tr>
+							<tr>
+								<td>Fondant</td>
+								<td>10</td>
+							</tr>
+							<tr>
+								<td>Galletas varias</td>
+								<td>100</td>
+							</tr>
+							<tr>
+								<td>Galletas oreos</td>
+								<td>50</td>
+							</tr>
+							<tr>
+								<td>Figuritas plasticas</td>
+								<td>5</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+      </article>
+    </section>
+
+    <section>
+			<article class="pedidos-container">
+				<h1>Pedidos.</h1>
+				<table>
+					<tr>
+						<th>Nombre</th>
+						<th>Teléfono</th>
+						<th>Correo Electrónico</th>
+						<th>Descripción del pastel</th>
+						<th>Sabores</th>
+						<th>Adornos</th> 
+					</tr>
+					<tr>
+						<td>Jose Luis Flores Madero</td>
+						<td>7443302203</td>
+						<td>correo@mail.com</td>
+						<td>Bonito y gordito</td>
+						<td>Tres leches</td>
+						<td>Sin adorno</td>
+					</tr>
+					<tr>
+						<td>Carlos Sanchez Flores</td>
+						<td>7443302202</td>
+						<td>peronitios@mail.com</td>
+						<td>Muchas galletas</td>
+						<td>Vainilla, Chocolate, Zanahoria</td>
+						<td>Galletas oreos</td>
+					</tr>
+					<tr>
+						<td>Maria Concepcion de la Torre Soriano</td>
+						<td>7443342203</td>
+						<td>porritas@mail.com</td>
+						<td>Doble de todo</td>
+						<td>Zanahoria</td>
+						<td>Fondant, Galletas oreos</td>
+					</tr>
+					<tr>
+						<td>Miguel Angel Flores Flores</td>
+						<td>7463302203</td>
+						<td>gatitos@mail.com</td>
+						<td>Libre de gluten</td>
+						<td>Chocolate, Red velvet</td>
+						<td>Fondant, Frutos rojos, Galletas varias </td>
+					</tr>
+					<tr>
+						<td>Olga Patricia Guinto Cruz</td>
+						<td>7473302203</td>
+						<td>costras@mail.com</td>
+						<td>Quiero que las galletas parezcan escudos y tenga figuritas comestibles</td>
+						<td>Vainilla, Chocolate</td>
+						<td>Fondant, Galletas varias</td>
+					</tr>
+					<tr>
+						<td>Jair Benigno Niño</td>
+						<td>7423302203</td>
+						<td>tetrahydrocannabinol@mail.com</td>
+						<td>Sin descripción</td>
+						<td>Zanahoria</td>
+						<td>Fondant, Frutos rojos </td>
+					</tr> 
+				</table>
+			</article>
+		</section>
+      
+    <footer>
+       
+    </footer>
+  </body>
+</html>
